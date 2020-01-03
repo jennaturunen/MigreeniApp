@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".saa">
+
+
+    <ImageView
+        android:id="@+id/tausta_saa"
+        android:layout_width="297dp"
+        android:layout_height="415dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:contentDescription="@string/def_empty"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:srcCompat="@drawable/corner_rad" />
+
+    <TextView
+        android:id="@+id/pros_textview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:text="@string/pros_merkki"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toEndOf="@+id/kosteus_textview"
+        app:layout_constraintTop_toBottomOf="@+id/hpa_textview" />
+
+    <TextView
+        android:id="@+id/kaupunki_textview"
+        android:layout_width="296dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="8dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/saaikoni_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+
+        android:layout_marginEnd="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="90sp"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="@+id/lampotila_textview"
+        app:layout_constraintEnd_toStartOf="@+id/lampotila_textview"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <TextView
+        android:id="@+id/lampotila_textview"
+        android:layout_width="103dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="72dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <TextView
+        android:id="@+id/yksityiskohta_textview"
+        android:layout_width="261dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/saaikoni_imageview" />
+
+    <TextView
+        android:id="@+id/ilmanpaine_text"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:text="@string/ilmanpaine"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/ilmanpaine_textview"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/yksityiskohta_textview" />
+
+    <TextView
+        android:id="@+id/ilmanpaine_textview"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/hpa_textview"
+        app:layout_constraintStart_toEndOf="@+id/ilmanpaine_text"
+        app:layout_constraintTop_toBottomOf="@+id/yksityiskohta_textview" />
+
+    <TextView
+        android:id="@+id/kosteus_text"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:text="@string/kost_pros"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/kosteus_textview"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/ilmanpaine_text" />
+
+    <TextView
+        android:id="@+id/hpa_textview"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:text="@string/hpa_merkki"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ilmanpaine_textview"
+        app:layout_constraintTop_toBottomOf="@+id/yksityiskohta_textview" />
+
+    <TextView
+        android:id="@+id/kosteus_textview"
+        android:layout_width="73dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/yksityiskohta_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/pros_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/kosteus_text"
+        app:layout_constraintTop_toBottomOf="@+id/ilmanpaine_textview" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintGuide_percent="0.8092869" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintGuide_percent="0.1" />
+
+</android.support.constraint.ConstraintLayout>

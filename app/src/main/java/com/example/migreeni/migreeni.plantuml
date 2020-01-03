@@ -1,0 +1,234 @@
+@startuml
+
+title __MIGREENI's Class Diagram__\n
+
+  package com.example.migreeni {
+    class MainActivity {
+        {static} + tag : String
+        + paiviaValissa()
+        # onCreate()
+        + kalenteri_icon()
+        + saa_icon()
+        + merkinta_icon()
+        + viime_merkinta_icon()
+        + loadData()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class Merkinta_lista {
+        {static} - ourInstance : Merkinta_lista
+        - merkinnat : List<Uusi_merkinta>
+        {static} ~ getInstance()
+        - Merkinta_lista()
+        + getMerkinnat()
+        + setMerkinnat()
+        + clearMerkinnat()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class NavigationDrawerFragment {
+        {static} - STATE_SELECTED_POSITION : String
+        {static} - PREF_USER_LEARNED_DRAWER : String
+        - mDrawerToggle : ActionBarDrawerToggle
+        - mDrawerLayout : DrawerLayout
+        - mDrawerListView : ListView
+        - mFragmentContainerView : View
+        - mCurrentSelectedPosition : int
+        - mFromSavedInstanceState : boolean
+        - mUserLearnedDrawer : boolean
+        + NavigationDrawerFragment()
+        + onCreate()
+        + onActivityCreated()
+        + onCreateView()
+        + isDrawerOpen()
+        + setUp()
+        - selectItem()
+        + onAttach()
+        + onDetach()
+        + onSaveInstanceState()
+        + onConfigurationChanged()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        - showGlobalContextActionBar()
+        - getActionBar()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    interface NavigationDrawerCallbacks {
+        {abstract} + onNavigationDrawerItemSelected()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class PVM_picker {
+        ~ _editText : EditText
+        - _day : int
+        - _month : int
+        - _Year : int
+        - _context : Context
+        + PVM_picker()
+        + onDateSet()
+        + onClick()
+        - updateDisplay()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class Uusi_merkinta {
+        ~ paivamaara : String
+        ~ aika : String
+        ~ laake : String
+        ~ kipu : String
+        ~ lisatiedot : String
+        + Uusi_merkinta()
+        + getPaivamaara()
+        + getAika()
+        + getLaake()
+        + getLisatiedot()
+        + getKipu()
+        + toString()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class kalenteri {
+        ~ kalenteri : CalendarView
+        ~ dateview : TextView
+        # onCreate()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class merkinta {
+        # onCreate()
+        + tallenna_merkinta()
+        + saveData()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class saa {
+        {static} - TAG : String
+        - tv_kaupunki : TextView
+        - tv_lampotila : TextView
+        - tv_ilmanpaine : TextView
+        - tv_kosteus : TextView
+        - tv_yksityiskohta : TextView
+        - tv_ikoni : ImageView
+        - mQueue : RequestQueue
+        + ikoniUrl : String
+        + latitude : String
+        + longtitude : String
+        - location_manager : LocationManager
+        - location_listener : LocationListener
+        # onCreate()
+        + onRequestPermissionsResult()
+        + tarkista_luvat()
+        + hae_saa()
+        + setIkoni()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class time_picker {
+        - editText : EditText
+        - myCalendar : Calendar
+        - ctx : Context
+        + time_picker()
+        + onFocusChange()
+        + onTimeSet()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class valikko {
+        - mTitle : CharSequence
+        # onCreate()
+        + onNavigationDrawerItemSelected()
+        + onSectionAttached()
+        + restoreActionBar()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class PlaceholderFragment {
+        {static} - ARG_SECTION_NUMBER : String
+        + PlaceholderFragment()
+        {static} + newInstance()
+        + onCreateView()
+        + onAttach()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class vanhat_merkinnat {
+        {static} - tagi : String
+        {static} + EXTRA : String
+        ~ lv : ListView
+        # onCreate()
+        + poista_merkinnat()
+        + saveData()
+    }
+  }
+  
+
+  package com.example.migreeni {
+    class vanhat_merkinnat_avattuinfo {
+        # onCreate()
+    }
+  }
+  
+
+  MainActivity -up-|> AppCompatActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  NavigationDrawerFragment -up-|> Fragment
+  NavigationDrawerFragment o-- NavigationDrawerCallbacks : mCallbacks
+  NavigationDrawerFragment +-down- NavigationDrawerCallbacks
+  SavedState -up-|> Parcelable
+  InstantiationException -up-|> AndroidRuntimeException
+  PVM_picker -up-|> OnClickListener
+  PVM_picker -up-|> OnDateSetListener
+  kalenteri -up-|> AppCompatActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  merkinta -up-|> AppCompatActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  saa -up-|> AppCompatActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  time_picker -up-|> OnFocusChangeListener
+  time_picker -up-|> OnTimeSetListener
+  valikko -up-|> NavigationDrawerCallbacks
+  valikko -up-|> Activity
+  valikko o-- NavigationDrawerFragment : mNavigationDrawerFragment
+  valikko +-down- PlaceholderFragment
+  PlaceholderFragment -up-|> Fragment
+  SavedState -up-|> Parcelable
+  InstantiationException -up-|> AndroidRuntimeException
+  vanhat_merkinnat -up-|> AppCompatActivity
+  HostCallbacks -up-|> FragmentHostCallback
+  vanhat_merkinnat_avattuinfo -up-|> AppCompatActivity
+  HostCallbacks -up-|> FragmentHostCallback
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

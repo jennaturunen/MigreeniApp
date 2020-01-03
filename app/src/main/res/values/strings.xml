@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Migreenipäiväkirja</string>
+    <string name="image_meta">image</string>
+    <string name="title_activity_valikko">valikko</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="merkinta_otsikko">Lisää uusi merkintä</string>
+    <string name="pvm_otsikko">Päivämäärä</string>
+    <string name="aika_otsikko">Aika</string>
+    <string name="laakkeet_otsikko">Lääkkeet</string>
+    <string name="kipu_otsikko">Kipu</string>
+    <string name="Lisatietoja_otsikko">Lisätietoja</string>
+    <string name="tallenna_merkintä">Tallenna</string>
+    <string name="päivämäärä_placehold">9/5/2019</string>
+    <string name="lisatietoja_placeholder">Kirjoita tähän</string>
+
+    <string name="viime_merkinta_def_arvo">0</string>
+    <string name="pikamerkinta">Pika-\nmerkintä</string>
+
+    <string name="vanhat_merkinnat_otsikko">Aiemmat merkinnät</string>
+    <string name="vanhat_merkinnat_avattu_otsikko">Otsikko_placeholder</string>
+    <string name="vanhat_merkinnat_avattu_info">Sisältö_placeholder</string>
+    <string name="clear_list_button">Poista merkinnät</string>
+
+    <string name="kalenteri_otsikko">Kalenteri</string>
+    <string name="kalenteri_pvm"> </string>
+    <string name="time_picker">12:00</string>
+    <string name="aika_valinta_viiva">viiva</string>
+    <string name="Ibuprofeeni">Ibuprofeeni</string>
+    <string name="Parasetamoli">Parasetamoli</string>
+    <string name="Täsmälääke">Täsmälääke</string>
+    <string name="kipumittari1">Ei kipua</string>
+    <string name="kipumittari2">Lievä</string>
+    <string name="kipumittari3">Kohtalainen</string>
+    <string name="kipumittari4">Voimakas</string>
+    <string name="kipumittari5">Sietämätön</string>
+
+    <string name="pros_merkki">%</string>
+    <string name="hpa_merkki">hpa</string>
+    <string name="ilmanpaine">Ilmanpaine</string>
+    <string name="kost_pros">Kosteusprosentti</string>
+
+    <string name="def_empty"> </string>
+
+</resources>
