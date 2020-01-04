@@ -3,7 +3,9 @@
 
 Migreenin seurantaan tarkoitettu mobiilisovellus, jossa käyttäjä voi tallentaa ja tarkastella kohtauksiaan. Sovellusta voitaisiin käyttää myös migreenin diagnoosin tekemiseen.
 
-<img src="images/mig1.png">
+<img src="images/mig1.PNG"> <img src="images/mig2.PNG"> 
+<img src="images/mig3.PNG"> 
+<img src="images/mig4.PNG">
 
 Mikä on migreeni?
 
