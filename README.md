@@ -1,9 +1,9 @@
 # Migreeni_app
-Migreenipäiväkirja
+<h2>Migreenipäiväkirja</h2>
 
 Migreenin seurantaan tarkoitettu mobiilisovellus, jossa käyttäjä voi tallentaa ja tarkastella kohtauksiaan. Sovellusta voitaisiin käyttää myös migreenin diagnoosin tekemiseen.
 
-<img src="images/mig1.png" >
+<img src="images/mig1.png">
 
 Mikä on migreeni?
 
@@ -37,7 +37,7 @@ https://migreeni.org/paansarkysairaudet/migreeni/
 https://www.yths.fi/terveystieto_ja_tutkimus/terveystietopankki/119/paansarky_-_migreeni_ja_muut_yleisimmat_paansaryt
 
 
-SOVELLUS
+<h3>SOVELLUS</h3>
 
 Yllä mainitut tiedot huomioiden migreeniin seurantaan suunniteltu sovellus on perustellusti hyödyllinen projekti, jolle löytyy käyttäjäkuntaa niin migreeniä sairastavista kuin migreeniä itsellään epäilevistä. Jälkimmäinen ryhmä hyötyy sovelluksesta erityisesti diagnosoinnin apuna, sillä useimmiten tähän käytetään oirepäiväkirjaa apuna; diagnoosi voidaan tehdä, mikäli migreenikohtauksia on ollut viisi, tai aurallisia migreenikohtauksia kaksi.
 
