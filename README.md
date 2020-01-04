@@ -1,10 +1,11 @@
 # Migreeni_app
 Migreenipäiväkirja
 
-Migreenin seurantaan tarkoitettu mobiilisovellus
+Migreenin seurantaan tarkoitettu mobiilisovellus, jossa käyttäjä voi tallentaa ja tarkastella kohtauksiaan. Sovellusta voitaisiin käyttää myös migreenin diagnoosin tekemiseen.
 
+<img src="images/mig1.png">
 
-Mikä migreeni?
+Mikä on migreeni?
 
 Migreeni on aivorungossa syntyvä, päänsärkykohtauksia aiheuttava sairaus. Migreenistä arvioidaan kärsivän noin 10% väestöstä, tämän lisäksi migreenistä kärsii moni ilman virallista diagnoosia. Pahimmillaan migreeni on elämää rajoittava ja elämänlaatua heikentävä sairaus.
 
