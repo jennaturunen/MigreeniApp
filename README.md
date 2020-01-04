@@ -3,7 +3,7 @@ Migreenipäiväkirja
 
 Migreenin seurantaan tarkoitettu mobiilisovellus, jossa käyttäjä voi tallentaa ja tarkastella kohtauksiaan. Sovellusta voitaisiin käyttää myös migreenin diagnoosin tekemiseen.
 
-<img src="images/mig1.png">
+<img src="images/mig1.png" >
 
 Mikä on migreeni?
 
