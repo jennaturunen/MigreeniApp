@@ -1,7 +1,7 @@
 # Migreeni_app
 <h2>Migreenipäiväkirja</h2>
 
-Migreenin seurantaan tarkoitettu mobiilisovellus, jossa käyttäjä voi tallentaa ja tarkastella kohtauksiaan. Sovellusta voitaisiin käyttää myös migreenin diagnoosin tekemiseen.
+Migreenin seurantaan tarkoitettu mobiilisovellus, jossa käyttäjä voi tallentaa ja tarkastella kohtauksiaan. Sovellusta voitaisiin käyttää myös migreenin diagnoosin tekemiseen. Projekti on tehty ryhmätyönä. Oma osuuteni koski säätä ja sen toimintoja.
 
 <img src="images/mig1.PNG"> <img src="images/mig2.PNG"> 
 <img src="images/mig3.PNG"> 
